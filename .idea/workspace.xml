@@ -4,42 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad02c180-63f8-477e-a389-861553dfa358" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/email-1573-svgrepo-com.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/BrigittaMecsenero6.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/brigifitness.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/@theme_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/@theme_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/_metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/chunk-A7UTJUSY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/chunk-A7UTJUSY.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/chunk-VJWGEPT5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/chunk-VJWGEPT5.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vitepress___@vue_devtools-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vitepress___@vue_devtools-api.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vitepress___@vueuse_core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vitepress___@vueuse_core.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/cache/deps/vue.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vitepress/config.mts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CallButton.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SendMessage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+    <list default="true" id="ad02c180-63f8-477e-a389-861553dfa358" name="Changes" comment="feat: Add initial HTML structure and SVG icons for the project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness/brigittam/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness/brigittam/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -128,7 +95,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -145,8 +112,26 @@
       <workItem from="1737923003808" duration="9305000" />
       <workItem from="1738054679993" duration="28000" />
       <workItem from="1738054718947" duration="3000" />
-      <workItem from="1738872557481" duration="6495000" />
+      <workItem from="1738872557481" duration="7990000" />
+      <workItem from="1739267780221" duration="502000" />
+      <workItem from="1739781832782" duration="611000" />
+      <workItem from="1740300491168" duration="6000" />
+      <workItem from="1740565350377" duration="66000" />
+      <workItem from="1741776799216" duration="157000" />
+      <workItem from="1741776960792" duration="297000" />
+      <workItem from="1741777263475" duration="180000" />
+      <workItem from="1741807403674" duration="50000" />
+      <workItem from="1741807458888" duration="197000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Add initial HTML structure and SVG icons for the project">
+      <option name="closed" value="true" />
+      <created>1738879107154</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738879107154</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,5 +141,9 @@
         <option value="$PROJECT_DIR$/brigittam/tailwind.config.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Add initial HTML structure and SVG icons for the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add initial HTML structure and SVG icons for the project" />
   </component>
 </project>
