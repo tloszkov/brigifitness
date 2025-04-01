@@ -1,316 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mecseneró Brigitta</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .fa {
-      padding: 10px;
-      font-size: 20px;
-      width: 40px;
-      text-align: center;
-      text-decoration: none;
-      margin: 2px 2px;
-      border-radius: 50%;
-    }
-
-    .fa:hover {
-      opacity: 0.7;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #d1235d;
-      color: white;
-    }
-
-    .fa-tiktok {
-      background: rgb(70, 184, 145);
-      color: white;
-    }
-
-    .fa-envelope {
-      background: #007bb5;
-      color: white;
-    }
-
-    .fa-phone {
-      background: #7d03ff;
-      color: white;
-    }
-
-    .fa-map-marker {
-      background: #00b51e;
-      color: #ffffff;
-    }
-
-    </style>
-
-  <script>
-    tailwind.config = {
-      ode: 'class',
-      theme:{
-        extend: {
-            colors: {
-              blue:{
-                50:"#f0f9ff",
-                100:"#e0f2fe",
-                200:"#bae6fd",
-                300:"#7dd3fc",
-                400:"#38bdf8",
-                500:"#0ea5e9",
-                600:"#0284c7",
-                700:"#0369a1",
-                800:"#075985",
-                900:"#0c4a6e",
-                950:"#0a4275"},
-            },
-        }
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuItems = document.querySelectorAll('nav a');
-
-      menuItems.forEach(item => {
-        item.addEventListener('click', (event) => {
-          event.preventDefault();
-          const targetId = item.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-
-          targetSection.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        });
-      });
-    });
-  </script>
+  <title>Mecseneró Brigitta | Személyi edző, táplálkozási tanácsadó</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="">
-<nav class="fixed top-0 left-0 w-full z-10 bg-blue-100 bg-blue-800 shadow-md padding-x-4">
-  <div class="flex justify-between">
-    <div class="flex justify-between">
-      <div class="flex space-x-7">
-        <div>
-          <a href="#" class="flex items-center py-4 px-2 text-blue-700 text-white hover:text-blue-500">
-            Logo
-          </a>
-        </div>
-        <div class="flex items-center text-blue-700 text-white hover:text-blue-500">
-          <a href="#home" class="py-4 px-2 text-blue-700 text-white hover:text-blue-500 transition duration-300">Beveztő</a>
-          <a href="#about" class="py-4 px-2 text-blue-700 text-white hover:text-blue-500 transition duration-300">Rólam</a>
-          <a href="#whatcanihelp" class="py-4 px-2 text-blue-700 text-white hover:text-blue-500 transition duration-300">Miért én?</a>
-          <a href="#goal" class="py-4 px-2 text-blue-700 text-white hover:text-blue-500 transition duration-300">Célom</a>
-          <a href="#contact" class="py-4 px-2 text-blue-700 text-white hover:text-blue-500 transition duration-300">Kapcsolat</a>
-        </div>
+<body>
+<header>
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">Mecseneró Brigitta</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-</nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Főoldal</a></li>
+        <li><a href="#about">Rólam</a></li>
+        <li><a href="#services">Szolgáltatások</a></li>
+        <li><a href="#contact">Kapcsolat</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-<section id="home" >
-  <div class="h-screen bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero.jpeg');">
-    <div class="bg-blue-900 bg-opacity-70 max-w-6xl mx-auto px-4 py-12">
-      <h1 class="text-3xl font-semibold text-gray-800 text-white">Mecseneró Brigitta</h1>
-      <p class="mt-4 text-gray-600 text-white">Személyi edző, táplálkozási tanácsadó</p>
-      <p class="mt-4 text-gray-600 text-white">Minden, ami az egészséghez kell!</p>
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>MECSENERÓ BRIGITTA</h1>
+      <h2>Személyi edző, táplálkozási tanácsadó</h2>
+      <p class="tagline">Minden, ami az egészséghez kell!</p>
+      <a href="#contact" class="btn btn-primary">Kapcsolatfelvétel</a>
     </div>
   </div>
 </section>
 
-<section id="about">
-  <div class="h-screen bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero2.jpeg');">
-      <div class="bg-blue-900 bg-opacity-70 max-w-6xl mx-auto px-4 py-12">
-        <h1 class="text-3xl font-semibold text-gray-800 text-white">Rólam</h1>
-        <p class="mt-4 text-gray-600 text-white">A nevem Mecseneró Brigitta, elhivatott vagyok a sport és
-          az egészséges életmód iránt.
-
-          Számomra a sport egyfajta kikapcsolódást és szenvedélyt
-          jelent. Az elmúlt évek során nagy fizikai és mentális
-          változáson, rengeteg nehézségen mentem keresztül, így
-          ennek köszönhetően döntöttem az életmódváltás és a
-          sport mellett. Azóta beleszerettem ebbe a sportba, és
-          engem ez mentett meg. Tanultam türelemről, kitartásról,
-          lemondásról, az emberi test határairól. Mindez vezetett rá
-          igazán arra, hogy személyi edzőként segítsek az
-          embereknek megadni azt a mentőövet, amibe
-          kapaszkodhatnak, ami átsegíti őket a nehéz időszakokon.
-          Személyi edzőként fontosnak tartom, hogy a mai rohanó
-          világunkban az állandó stressz és a megfelelési kényszer
-          romboló hatását az életmódunk változtatásával
-          csökkentsük. Az életünkben bekövetkezett negatív
-          változásokat helyreállítsuk és egy kiegyensúlyozott,
-          harmonikus életvitelt alakítsunk ki. Hiszem, hogy mindenki
-          képes elérni a legjobb formáját, függetlenül attól, hogy
-          most hol tart az útján. Az edzés nem csupán fizikai kihívás,
-          hanem mentális és érzelmi utazás is.</p>
-      </div>
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-header">
+      <h2>Rólam</h2>
+      <div class="decorative-line"></div>
     </div>
-</section>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="img-placeholder">
 
-<!--<section id="whatcanihelp">-->
-<!--  <div class="max-w-6xl mx-auto px-4 py-12">-->
-<!--    <h1 class="text-3xl font-semibold text-gray-800 text-white">Amiben segíteni tudok</h1>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Izomépítés</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Személyi edzés</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Fogyás</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Táplálkozási tanácsadás</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Alakformálás</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Online coaching</p>-->
-<!--    <p class="mt-4 text-gray-600 text-white">Állóképesség fejlesztés</p>-->
-<!--  </div>-->
-<!--</section>-->
-<section id="whatcanihelp">
-  <div class="mx-auto py-16 bg-blue-900">
-    <div class="text-center text-gray-800 text-white mb-12">
-      <span class="text-xl font-bold border-b-4 border-white inline-block mb-700 pb-2">Amiben segíteni tudok</span>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Design Card -->
-      <div class="bg-cover bg-center bg-no-repeat place-content-end opacity-90" style="background-image: url('/img/BrigittaMecsenero3.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Izomépítés</h3>
+          <i class="fas"><img src="img/hero-bg.jpeg" width="45%"/></i>
+        </div>
       </div>
+      <div class="about-text">
+        <p>A nevem Mecseneró Brigitta, elhivatott vagyok a sport és az egészséges életmód iránt.</p>
 
-      <!-- Branding Card -->
-      <div class="bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero5.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Személyi edzés</h3>
-      </div>
+        <p>Számomra a sport egyfajta kikapcsolódást és szenvedélyt jelent. Az elmúlt évek során nagy fizikai és mentális változáson, rengeteg nehézségen mentem keresztül, így ennek köszönhetően döntöttem az életmódváltás és a sport mellett.</p>
 
-      <!-- Consultation Card -->
-      <div class="bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero6.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Fogyás</h3>
-      </div>
+        <p>Azóta beleszerettem ebbe a sportba, és engem ez mentett meg. Tanultam türelemről, kitartásról, lemondásról, az emberi test határairól. Mindez vezetett rá igazán arra, hogy személyi edzőként segítsek az embereknek megadni azt a mentőövet, amibe kapaszkodhatnak, ami átsegíti őket a nehéz időszakokon.</p>
 
-      <!-- Promises Card -->
-      <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('/img/BrigittaMecsenero3.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Táplálkozási tanácsadás</h3>
-      </div>
+        <p>Személyi edzőként fontosnak tartom, hogy a mai rohanó világunkban az állandó stressz és a megfelelési kényszer romboló hatását az életmódunk változtatásával csökkentsük. Az életünkben bekövetkezett negatív változásokat helyreállítsuk és egy kiegyensúlyozott, harmonikus életvitelt alakítsunk ki.</p>
 
+        <p>Hiszem, hogy mindenki képes elérni a legjobb formáját, függetlenül attól, hogy most hol tart az útján. Az edzés nem csupán fizikai kihívás, hanem mentális és érzelmi utazás is.</p>
 
-      <!-- Support Card -->
-      <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('/img/BrigittaMecsenero5.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-contain bg-opacity-60 bg-black">Alakformálás</h3>
-      </div>
-
-        <!-- Support Card -->
-      <div class="bg-cover bg-center bg-no-repeat" style="background-image: url('/img/BrigittaMecsenero6.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Online coaching</h3>
-      </div>
-
-        <!-- Support Card -->
-      <div class="bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero3.jpeg');">
-        <h3 class="max-w-6xl mx-auto px-4 py-12 text-3xl font-semibold text-white bg-opacity-60 bg-black">Állóképesség fejlesztés</h3>
+        <p class="highlight">Célom, hogy segítsek neked megtalálni az egyensúlyt és a motivációt, hogy elérd a kitűzött céljaidat, és átadjam számodra a mozgás örömét.</p>
       </div>
     </div>
   </div>
 </section>
 
-  <section id="goal">
-    <div class="h-screen bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero3.jpeg');">
-      <div class="bg-blue-900 bg-opacity-70 max-w-6xl mx-auto px-4 py-12">
-        <h1 class="text-3xl font-semibold text-gray-800 text-white">Én készen állok a közös munkára...</h1>
-        <h1 class="text-3xl font-semibold text-gray-800 text-white">és Te?</h1>
-
-        <p class="mt-4 text-gray-600 text-white">Ha bármilyen kérdésed van,
-          keress bizalommal, ha velem
-          együtt szeretnél a változás és
-          a fejlődés útjára lépni, várlak
-          nagy szeretettel!</p>
-        <p class="mt-4 text-gray-600 text-white">Amiben segíthetek:</p>
-        <p class="mt-4 text-gray-600 text-white">-izomépítés</p>
-        <p class="mt-4 text-gray-600 text-white">-táplálkozási tanácsadás</p>
-        <p class="mt-4 text-gray-600 text-white">-alakformálás</p>
-        <p class="mt-4 text-gray-600 text-white">-állóképesség fejlesztés</p>
-        <p class="mt-4 text-gray-600 text-white">-online edzéstervezés</p>
-        <p class="mt-4 text-gray-600 text-white">-maximális odafigyelés az edzéseken</p>
-        <p class="mt-4 text-gray-600 text-white">-folyamatos motiváció, jókedv</p>
-        <p class="mt-4 text-gray-600 text-white">Lépj ki a komfortzónádból, és tegyél most azért, hogy a legjobb önmagaddá válhass!</p>
-        <h5 class="mt-4 text-gray-600 text-white">Hiszem, hogy a mozgás és a helyes táplálkozás a hosszú távú egészség kulcsa. Nem rövid távú eredményeket ígérek, hanem fenntartható életmódot.</h5>
-        <h4 class="mt-4 text-gray-600 text-white">Mecseneró Brigitta</h4>
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Szolgáltatások</h2>
+      <p>Amiben segíteni tudok</p>
+      <div class="decorative-line"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <h3>Személyi edzés</h3>
+        <p>Személyre szabott edzésterv és motiváció a céljaid eléréséhez.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon">
+          <i class="fas fa-weight"></i>
+        </div>
+        <h3>Fogyás</h3>
+        <p>Hatékony módszerek a testsúlycsökkentéshez és az eredmények fenntartásához.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon">
+          <i class="fas fa-running"></i>
+        </div>
+        <h3>Állóképesség fejlesztés</h3>
+        <p>A fizikai teljesítmény és a kitartás növelése személyre szabott gyakorlatokkal.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon">
+          <i class="fas fa-apple-alt"></i>
+        </div>
+        <h3>Táplálkozási tanácsadás</h3>
+        <p>Egyénre szabott táplálkozási terv az optimális eredmények eléréséhez.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <h3>Online coaching</h3>
+        <p>Távolról is elérhető szakmai támogatás az edzéshez és életmódváltáshoz.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-icon">
+          <i class="fas fa-male"></i>
+        </div>
+        <h3>Alakformálás</h3>
+        <p>Célzott gyakorlatok a test formálásához és tónusosításához.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-icon">
+          <i class="fas fa-gem"></i>
+        </div>
+        <h3>Izomépítés</h3>
+        <p>Professzionális segítség az izomtömeg növeléséhez és a test erősítéséhez.</p>
       </div>
     </div>
-  </section>
-
-<section id="contact">
-  <div class="  h-screen bg-cover bg-center bg-no-repeat place-content-end" style="background-image: url('/img/BrigittaMecsenero5.jpeg');">
-        <div class="bg-blue-900 bg-opacity-70 max-w-6xl mx-auto px-4 py-12">
-          <h1 class="text-3xl font-semibold text-gray-800 text-white">Kapcsolat</h1>
-
-          <p class="mt-4 text-gray-600 text-white">
-            <a href="http://maps.google.com/?q=47.5274137,19.0805553" class="fa fa-map-marker"></a>
-              Helyszín: Chili Fitness 3 - Angyalföld, Budapest, Szegedi út 56., 1135
-          </p>
-
-            </a>
-          <p class="mt-4 text-gray-600 text-white" >
-            <a href="tel:+36702348992" class="fa fa-phone"></a>
-              Telefon: +36 70 234 8992
-          </p>
-
-          <p class="mt-4 text-gray-600 text-white">
-            <a href="mailto:mecsenerobrigi@gmail.com" class="fa fa-envelope"></a>
-               Email: mecsenerobrigi@gmail.com
-          </p>
-
-          <p class="mt-4 text-gray-600 text-white">
-            <a href="https://www.instagram.com/brigimecsenero/" class="fa fa-instagram"></a>
-            Instagram: @brigimecsenero
-          </p>
-
-          <p class="mt-4 text-gray-600 text-white">
-            <a href="https://www.facebook.com/mecsenerobrigitta" class="fa fa-facebook"></a>
-            Facebook: Mecseneró Brigitta
-          </p>
-
-          <p class="mt-4 text-gray-600 text-white">
-            <a href="https://www.tiktok.com/mecsenerobri" class="fa fa-tiktok">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-              </svg>
-            </a>
-            Tiktok: mecsenerobri
-          </p>
-        </div>
-    </div>
+  </div>
 </section>
 
-<footer class="mt-12 text-center text-black p-4">
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Ugrás vissza</a>
+<section class="quote">
+  <div class="container">
+    <blockquote>
+      <p>Hiszem, hogy a mozgás és a helyes táplálkozás a hosszú távú egészség kulcsa. Nem rövid távú eredményeket ígérek, hanem fenntartható életmódot.</p>
+      <cite>- Mecseneró Brigitta</cite>
+    </blockquote>
+    <div class="cta">
+      <p>Lépj ki a komfortzónádból, és tegyél most azért, hogy a legjobb önmagaddá válhass!</p>
+      <p>Én készen állok a közös munkára... és Te?</p>
+      <a href="#contact" class="btn btn-secondary">Kezdjük el együtt!</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2>Kapcsolat</h2>
+      <p>Ha bármilyen kérdésed van, keress bizalommal, ha velem együtt szeretnél a változás és a fejlődés útjára lépni, várlak nagy szeretettel!</p>
+      <div class="decorative-line"></div>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="details">
+            <h3>Helyszín</h3>
+            <p>Chili Fitness 3 - Angyalföld, Budapest, Szegedi út 56., 1135</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="details">
+            <h3>Telefon</h3>
+            <p><a href="tel:+36702348992">+36 70 234 8992</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="details">
+            <h3>Email</h3>
+            <p><a href="mailto:mecsenerobrigi@gmail.com">mecsenerobrigi@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3>Küldj üzenetet</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Név" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Telefonszám">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Üzenet" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Küldés</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="social">
+  <div class="container">
+    <h3>Kövess az alábbi platformokon</h3>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/brigimecsenero/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/MecseneroBrigitta" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@mecsenerobri" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h3>Mecseneró Brigitta</h3>
+        <p>Személyi edző, táplálkozási tanácsadó</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Főoldal</a>
+        <a href="#about">Rólam</a>
+        <a href="#services">Szolgáltatások</a>
+        <a href="#contact">Kapcsolat</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="currentYear"></span> Mecseneró Brigitta. Minden jog fenntartva.</p>
+    </div>
+  </div>
 </footer>
 
-<script>
-  const themeToggle = document.getElementById('themeToggle');
-  const sunIcon = document.getElementById('sunIcon');
-  const moonIcon = document.getElementById('moonIcon');
-  const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
+<a href="#home" class="back-to-top" id="backToTop">
+  <i class="fas fa-chevron-up"></i>
+</a>
 
-  // Theme toggle functionality
-  themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle(');
-    sunIcon.style.display = sunIcon.style.display === 'none' ? 'block' : 'none';
-    moonIcon.style.display = moonIcon.style.display === 'none' ? 'block' : 'none';
-  });
-
-  // Mobile menu toggle
-  mobileMenuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-
-  // Optional: Initialize theme based on system preference
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: ').matches) {
-    document.documentElement.classList.add(');
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>

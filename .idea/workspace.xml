@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad02c180-63f8-477e-a389-861553dfa358" name="Changes" comment="feat: Add initial HTML structure and SVG icons for the project">
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-1573-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hero-bg.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero4.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hero-bg1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/BrigittaMecsenero6.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiktok.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +26,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="menu" />
         <option value="themechanger" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,7 +65,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/run/media/tloszkov/Documents/Documents/Work/2024/brigifitness/img&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -69,9 +80,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>
@@ -95,7 +108,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +135,9 @@
       <workItem from="1741777263475" duration="180000" />
       <workItem from="1741807403674" duration="50000" />
       <workItem from="1741807458888" duration="197000" />
+      <workItem from="1742754119357" duration="33000" />
+      <workItem from="1743452113262" duration="1783000" />
+      <workItem from="1743486530326" duration="1905000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Add initial HTML structure and SVG icons for the project">
       <option name="closed" value="true" />
